@@ -69,4 +69,85 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('fade-in-section');
         observer.observe(section);
     });
+
+    // Contact Form Handler
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value || 'N/A',
+                inquiry: document.getElementById('inquiry').value,
+                message: document.getElementById('message').value
+            };
+
+            // Create mailto link
+            const subject = encodeURIComponent(`New Contact Form Submission - ${formData.inquiry}`);
+            const body = encodeURIComponent(
+                `Name: ${formData.name}\n` +
+                `Email: ${formData.email}\n` +
+                `Company: ${formData.company}\n` +
+                `Inquiry Type: ${formData.inquiry}\n\n` +
+                `Message:\n${formData.message}`
+            );
+
+            const mailtoLink = `mailto:contact@eezygroupinc.com?subject=${subject}&body=${body}`;
+
+            // Open mailto link
+            window.location.href = mailtoLink;
+
+            // Show success message
+            showSuccessModal();
+
+            // Reset form
+            contactForm.reset();
+        });
+    }
+});
+
+// Success Modal
+function showSuccessModal() {
+    // Create modal overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'success-modal';
+    modal.innerHTML = `
+        <div class="modal-icon">✓</div>
+        <h3>메시지가 전송되었습니다</h3>
+        <p>곧 연락드리겠습니다.</p>
+        <button class="modal-close-btn" onclick="closeSuccessModal()">확인</button>
+    `;
+
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    // Fade in
+    setTimeout(() => {
+        overlay.classList.add('active');
+    }, 10);
+}
+
+function closeSuccessModal() {
+    const overlay = document.querySelector('.modal-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            overlay.remove();
+        }, 300);
+    }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('modal-overlay')) {
+        closeSuccessModal();
+    }
 });
