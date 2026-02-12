@@ -850,3 +850,37 @@ nav.navbar .logo i {
         gap: 30px;
     }
 }
+
+/* Brand Name Styling */
+.brand-name {
+    display: inline;
+}
+
+.brand-eezy {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.brand-suffix {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+/* Footer Brand Links */
+.brand-link {
+    display: inline;
+}
+
+.brand-link .brand-eezy {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.brand-link .brand-suffix {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    text-transform: lowercase;
+}
