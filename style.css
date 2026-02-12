@@ -10,8 +10,9 @@
     --accent-green: #10b981;
     --accent-pink: #f43f5e;
     --accent-orange: #f97316;
-    --font-heading: 'Outfit', sans-serif;
+    --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
+    --font-serif: 'Playfair Display', serif;
     --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -28,6 +29,7 @@ body {
     background-color: var(--bg-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    font-weight: 300;
 }
 
 h1,
@@ -36,8 +38,13 @@ h3,
 h4,
 h5 {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -0.02em;
+}
+
+h2 {
+    font-family: var(--font-serif);
+    font-weight: 600;
 }
 
 a {
@@ -76,15 +83,19 @@ a {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0;
     font-family: var(--font-heading);
     font-size: 1.5rem;
-    font-weight: 700;
     color: #ffffff !important;
+    letter-spacing: 0.5px;
 }
 
-.logo i {
-    color: #3b82f6;
+.logo .bold {
+    font-weight: 700;
+}
+
+.logo .light {
+    font-weight: 200;
 }
 
 .nav-links {
@@ -682,7 +693,9 @@ a {
 .fade-in-section.visible {
     opacity: 1;
     transform: none;
-}/* CRITICAL NAVBAR FIX - Override everything */
+}
+
+/* CRITICAL NAVBAR FIX - Override everything */
 nav.navbar {
     position: fixed !important;
     top: 0 !important;
