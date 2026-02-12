@@ -717,6 +717,7 @@ nav.navbar .nav-links a {
 nav.navbar .logo i {
     color: #3b82f6 !important;
 }
+
 /* New About Section Design */
 .about-section-new {
     background: white;
@@ -840,11 +841,11 @@ nav.navbar .logo i {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .about-image {
         order: -1;
     }
-    
+
     .services-grid-new {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -857,14 +858,15 @@ nav.navbar .logo i {
 }
 
 .brand-eezy {
-    font-family: var(--font-heading);
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
 .brand-suffix {
     font-family: var(--font-serif);
     font-weight: 400;
+    font-style: italic;
     text-transform: lowercase;
 }
 
@@ -874,13 +876,14 @@ nav.navbar .logo i {
 }
 
 .brand-link .brand-eezy {
-    font-family: var(--font-heading);
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
 .brand-link .brand-suffix {
     font-family: var(--font-serif);
     font-weight: 400;
+    font-style: italic;
     text-transform: lowercase;
 }
