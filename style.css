@@ -27,10 +27,10 @@ body {
     font-family: var(--font-body);
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    line-height: 1.5;
+    line-height: 1.4;
     overflow-x: hidden;
     font-weight: 300;
-    font-size: 0.95rem;
+    font-size: 0.80rem;
 }
 
 h1,
@@ -221,7 +221,7 @@ a {
 
 /* About Section - BOX DESIGN */
 .about-section {
-    padding: 60px 0;
+    padding: 50px 0;
     background: var(--bg-secondary);
 }
 
@@ -258,7 +258,7 @@ a {
 
 /* Brands Section - White Cards on Light BG */
 .brands-section {
-    padding: 60px 0;
+    padding: 50px 0;
     background-color: var(--bg-secondary);
 }
 
@@ -361,7 +361,7 @@ a {
 
 /* Services Section - BOX DESIGN */
 .services-section {
-    padding: 60px 0;
+    padding: 50px 0;
     background: white;
 }
 
@@ -412,7 +412,7 @@ a {
 .dark-section {
     background-color: var(--bg-dark);
     color: white;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .grid-2-col {
@@ -496,7 +496,7 @@ a {
 
 /* Contact Form Section */
 .contact-section {
-    padding: 60px 0;
+    padding: 50px 0;
     background: var(--bg-secondary);
 }
 
@@ -722,7 +722,7 @@ nav.navbar .logo i {
 /* New About Section Design */
 .about-section-new {
     background: white;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .about-grid {
@@ -782,7 +782,7 @@ nav.navbar .logo i {
 /* New Services Section Design */
 .services-section-new {
     background: white;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .services-grid-new {

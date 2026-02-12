@@ -121,9 +121,9 @@ function showSuccessModal() {
     modal.className = 'success-modal';
     modal.innerHTML = `
         <div class="modal-icon">✓</div>
-        <h3>메시지가 전송되었습니다</h3>
-        <p>곧 연락드리겠습니다.</p>
-        <button class="modal-close-btn" onclick="closeSuccessModal()">확인</button>
+        <h3>Message Sent Successfully</h3>
+        <p>We'll get back to you soon.</p>
+        <button class="modal-close-btn" onclick="closeSuccessModal()">OK</button>
     `;
 
     overlay.appendChild(modal);
