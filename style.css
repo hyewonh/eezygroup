@@ -12,7 +12,7 @@
     --accent-orange: #f97316;
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --font-serif: 'Playfair Display', serif;
+    --font-serif: 'Georgia', serif;
     --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -858,7 +858,7 @@ nav.navbar .logo i {
 }
 
 .brand-eezy {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-heading);
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -876,7 +876,7 @@ nav.navbar .logo i {
 }
 
 .brand-link .brand-eezy {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-heading);
     font-weight: 500;
     text-transform: uppercase;
 }
