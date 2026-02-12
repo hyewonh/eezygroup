@@ -1,0 +1,22 @@
+/* CRITICAL NAVBAR FIX - Override everything */
+nav.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background-color: #0f172a !important;
+    z-index: 9999 !important;
+    padding: 20px 0 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+nav.navbar .logo,
+nav.navbar .logo i,
+nav.navbar .nav-links a {
+    color: #ffffff !important;
+}
+
+nav.navbar .logo i {
+    color: #3b82f6 !important;
+}
