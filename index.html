@@ -12,7 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,14 +20,13 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-globe"></i> EezyGroup<span class="dot">.</span>
+                <i class="fa-solid fa-globe"></i> EezyGroup
             </a>
             <div class="nav-links">
                 <a href="#about">Who We Are</a>
                 <a href="#brands">Brands</a>
                 <a href="#what-we-do">What We Do</a>
                 <a href="#global-trust">Global Reach</a>
-                <a href="#careers">Careers</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="mobile-toggle">
@@ -47,11 +45,22 @@
                 <a href="#brands" class="btn-primary">Explore Our Brands <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#contact" class="btn-secondary">Partner With Us</a>
             </div>
-            <div class="scroll-indicator">
-                <div class="mouse"></div>
-            </div>
         </div>
     </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-box">
+                <h2>Who We Are</h2>
+                <p class="lead">EezyGroup Inc. is a global e-commerce group operating a portfolio of digital-first
+                    brands across multiple online marketplaces.</p>
+                <p>We specialize in sourcing, operating, and scaling high-quality consumer products with a strong focus
+                    on beauty, health, lifestyle, and innovative global essentials.</p>
+                <p>Our group structure enables brands to grow with operational excellence, regulatory confidence, and
+                    long-term strategic discipline.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="brands" class="section brands-section">
         <div class="container">
@@ -61,7 +70,6 @@
                 </p>
             </div>
             <div class="brands-grid">
-                <!-- EezyBeauty -->
                 <div class="brand-card">
                     <div class="card-icon icon-pink">
                         <i class="fa-solid fa-sparkles"></i>
@@ -75,7 +83,6 @@
                     </div>
                 </div>
 
-                <!-- EezyCatch -->
                 <div class="brand-card">
                     <div class="card-icon icon-green">
                         <i class="fa-solid fa-shield-halved"></i>
@@ -89,7 +96,6 @@
                     </div>
                 </div>
 
-                <!-- EezyBooks -->
                 <div class="brand-card">
                     <div class="card-icon icon-orange">
                         <i class="fa-solid fa-book-open"></i>
@@ -106,14 +112,38 @@
         </div>
     </section>
 
-    <!-- Global Reach & Trust/Compliance Combined Section -->
+    <section id="what-we-do" class="section services-section">
+        <div class="container">
+            <div class="services-box">
+                <h2>What We Do</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-number">01</div>
+                        <h3>Global Sourcing</h3>
+                        <p>We partner with trusted manufacturers and innovative brands worldwide to deliver
+                            quality-driven products with strong compliance and integrity standards.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-number">02</div>
+                        <h3>Marketplace Operations</h3>
+                        <p>We operate across major global online marketplaces using data-informed strategy and a
+                            compliance-first approach.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-number">03</div>
+                        <h3>Brand Incubation</h3>
+                        <p>We build, refine, and scale digital-native brands under the EezyGroup ecosystem with
+                            disciplined operational management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="global-trust" class="section dark-section">
         <div class="container grid-2-col">
-            <!-- Global Reach -->
-            <div class="col-content">
-                <div class="section-header-left">
-                    <h2><i class="fa-solid fa-earth-americas text-blue"></i> Global Reach</h2>
-                </div>
+            <div class="info-box">
+                <h2><i class="fa-solid fa-earth-americas text-blue"></i> Global Reach</h2>
                 <p>Our distributed operations allow us to respond to market dynamics while maintaining consistent global
                     standards.</p>
                 <div class="global-grid">
@@ -132,11 +162,8 @@
                 </div>
             </div>
 
-            <!-- Trust & Compliance -->
-            <div class="col-content">
-                <div class="section-header-left">
-                    <h2><i class="fa-solid fa-shield-check text-green"></i> Trust & Compliance</h2>
-                </div>
+            <div class="info-box">
+                <h2><i class="fa-solid fa-shield-check text-green"></i> Trust & Compliance</h2>
                 <p>Trust is foundational to our long-term growth. We maintain strict operational and regulatory
                     standards.</p>
                 <ul class="check-list">
@@ -150,10 +177,49 @@
         </div>
     </section>
 
-    <section id="insights" class="section insights-section">
-        <div class="container text-center">
-            <h2>Insights</h2>
-            <p>Exploring market trends, consumer behavior insights, and innovation in global e-commerce.</p>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p class="subtitle">Interested in partnership, brand collaboration, or distribution opportunities? Get
+                    in touch with us.</p>
+
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiry">Inquiry Type *</label>
+                        <select id="inquiry" name="inquiry" required>
+                            <option value="">Select an option</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="brand">Brand Collaboration</option>
+                            <option value="distribution">Distribution Inquiry</option>
+                            <option value="careers">Careers</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -169,37 +235,21 @@
             </div>
 
             <div class="footer-col">
-                <h4>Contact</h4>
-                <div class="contact-item">
-                    <i class="fa-regular fa-envelope"></i>
-                    <div>
-                        <span class="label">PARTNERSHIPS</span>
-                        <a href="mailto:partnerships@eezygroup.com">partnerships@eezygroup.com</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-regular fa-envelope"></i>
-                    <div>
-                        <span class="label">CAREERS</span>
-                        <a href="mailto:careers@eezygroup.com">careers@eezygroup.com</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <span class="label">LOCATION</span>
-                        <p>United States (Head Office)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h4>Quick Links</h4>
+                <h4>Company</h4>
                 <ul class="footer-links">
                     <li><a href="#about">Who We Are</a></li>
                     <li><a href="#brands">Brand Portfolio</a></li>
                     <li><a href="#what-we-do">What We Do</a></li>
                     <li><a href="#global-trust">Trust & Compliance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="https://eezygroup.online" target="_blank">eezygroup.online</a></li>
                 </ul>
             </div>
 
@@ -214,7 +264,7 @@
         </div>
         <div class="footer-bottom container">
             <p>&copy; 2026 EezyGroup Inc. All rights reserved.</p>
-            <p class="designer-credit">Designed with precision and integrity.</p>
+            <p>United States (Head Office)</p>
         </div>
     </footer>
 
